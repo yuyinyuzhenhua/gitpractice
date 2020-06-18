@@ -4,12 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .wrap{
+            width: 500px;
+            height: 400px;
+            border: 1px solid red;
+            position: relative;
+            top: 50px;
+            left:50px;
+        }
+        .out{
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .in{
+            width: 50px;
+            height: 50px;
+            border: 1px solid green;
+            position: absolute;
+            top: 50px;
+            left:50px;
+        }
+        body{
+           font-size:20px;
+           line-height: 30px; 
+        }
+        .txt{
+            font-size: 15px;
+            /* line-height: 3; */
+        }
+    </style>
 </head>
 <body>
-    <p>indesgvdfv</p>
+    <p class="txt">indesgvdfv</p>
     <div>
         <a href="./login.html">登陆</a>
         <a href="./register.html">注册</a>
     </div>
+
+    <div class="wrap">
+        <div class="out">
+            <div class="in"></div>
+        </div>
+    </div>
+
+    <!-- <input type="text" id="ipt"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script> -->
+    <script>
+        // let btn = document.getElementById('ipt')
+        // let timer;
+        // btn.addEventListener('keyup', function(e){
+        //     console.log(e.target)
+        //     if(timer){
+        //         clearTimeout(timer)
+        //     }
+        //     timer = setTimeout(() => {
+        //         console.log(this.value)
+        //         timer = null
+        //     }, 1000)
+        // })
+        // function debounce(fn, delay = 500){
+        //     // let _arguments = arguments
+        //     let timer = null;
+        //     return function(){
+        //         if(timer){
+        //             clearTimeout(timer)
+        //         }
+        //         timer = setTimeout(() => {
+        //             fn.apply(this, arguments)
+        //         }, delay)
+        //     }
+        // }
+
+        // btn.addEventListener('keyup', debounce(
+        //         function() {
+        //             console.log(this.value)
+        //         }
+        //     )
+        // )
+
+        // function wait(){
+        //     return new Promise(resolve => {
+        //         setTimeout(resolve, 10 * 1000)
+        //     })
+        // }
+
+        // async function main(){
+        //     console.time()
+        //     const x = wait()
+        //     const y = wait()
+        //     const z = wait()
+        //     await x;
+        //     await y;
+        //     await z;
+        //     console.timeEnd()
+        // }
+        // main()
+
+    </script>
 </body>
 </html>
